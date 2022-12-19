@@ -21,6 +21,6 @@ api = tweepy.API(auth)
 #     print(tweet.user.name+"さんが",tweet.text,"と呟きました")
 
 
-# TWEET_TEXT = "こんばんはああああ！"
+TWEET_TEXT = "こんばんはああああ！"
 
-# api.update_status(TWEET_TEXT)
+api.update_status(TWEET_TEXT)
