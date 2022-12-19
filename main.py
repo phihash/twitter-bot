@@ -1,4 +1,3 @@
-from config import CONFIG
 import tweepy ,os
 
 CK = os.environ.get("TWITTER_API_CONSUMER_KEY")
@@ -18,10 +17,10 @@ api = tweepy.API(auth)
 #     print('-------------------------')
 #     print(tweet.text)
 
-for tweet in tweepy.Cursor(api.search_tweets, q='幸せ').items(10):
-    print(tweet.user.name+"さんが",tweet.text,"と呟きました")
+# for tweet in tweepy.Cursor(api.search_tweets, q='幸せ').items(10):
+#     print(tweet.user.name+"さんが",tweet.text,"と呟きました")
 
 
-# TWEET_TEXT = "Hello World!"
+# TWEET_TEXT = "こんばんはああああ！"
 
 # api.update_status(TWEET_TEXT)
