@@ -1,4 +1,4 @@
-name: LINE Notify # ワークフロー名
+name: Tweet Bot # ワークフロー名
 # 発火タイミング  日本時刻の朝7時に定期処理(分 時 日 月 曜日(0が日曜))  UTC の 02:00 は JST だと 11:00 。
 #(UTC)日本時刻から9時間マイナスで設定する
 on:
@@ -26,7 +26,7 @@ jobs:
           # pip更新
           python -m pip install --upgrade pip
           # 必要なパッケージインストール
-          pip install line-bot-sdk
+          pip install tweepy
       - name: Run script
         run: |
           # main.pyの実行
